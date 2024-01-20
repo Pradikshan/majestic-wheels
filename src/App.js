@@ -1,5 +1,6 @@
 import { HeroImage } from "./components/HeroImage";
 import { HeroText } from "./components/HeroText";
+import { InfoSection } from "./components/InfoSection";
 import Navbar from "./components/Navbar";
 import SplitScreen from "./components/SplitScreen";
 
@@ -9,11 +10,11 @@ function App() {
       <Navbar />
 
       <SplitScreen>
-
         <HeroImage />
         <HeroText />
-
       </SplitScreen>
+
+      <InfoSection />
     </container>
   );
 }
