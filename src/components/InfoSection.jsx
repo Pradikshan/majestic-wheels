@@ -8,7 +8,7 @@ export const InfoSection = () => {
 
     return(
         <div className="mt-32">
-            <h1 className="text-center text-6xl font-medium">Why choose us?</h1>
+            <h1 className="text-center text-5xl font-medium">Why choose us?</h1>
             <div className="flex flex-row justify-center">
                 <InfoCard 
                 cardIcon={<PiCarProfileThin  style={style}/>} 
