@@ -4,11 +4,11 @@
 
 @layer base{
     html{
-        @apply font-manrope
+        @apply font-manrope 
     }
 
     li {
-        @apply px-3 transition ease-in-out delay-100 hover:scale-110
+        @apply px-3 transition ease-in-out delay-100 hover:scale-110 
     }
 
     li a{
@@ -16,14 +16,26 @@
     }
 
     .btn{
-        @apply mx-2 w-24 mt-2 justify-center py-1 rounded-full font-semibold
+        @apply mx-2 w-24 mt-2 justify-center py-1 rounded-lg font-semibold
     }
 
     .btn-login{
+        @apply ring-4 ring-blue-950 shadow-lg shadow-blue-950 transition ease-in-out delay-150 hover:scale-110
+    }
+
+    .btn-signup{
+        @apply shadow-lg shadow-blue-950 bg-blue-950 text-white ring ring-blue-950 transition ease-in-out delay-150 hover:scale-110 
+    }
+
+    .btn-hero{
+        @apply bg-blue-950 text-white transition ease-in-out delay-150 hover:scale-110 
+    }
+
+    /* .btn-login{
         @apply ring-4 ring-blue-900 shadow-lg shadow-blue-950 transition ease-in-out delay-150 hover:scale-110
     }
 
     .btn-signup{
-        @apply border-solid border-2 shadow-lg shadow-blue-950 bg-blue-950 text-white ring ring-blue-800 transition ease-in-out delay-150 hover:scale-110 
-    }
+        @apply border-solid border-2 shadow-lg shadow-blue-950 bg-gradient-to-r from-red-300 to-red-500 text-white ring  transition ease-in-out delay-150 hover:scale-110 
+    } */
 }

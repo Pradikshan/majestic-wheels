@@ -1,9 +1,7 @@
-import React from "react";
-
 const Navbar = () => {
     return (
-        <navbar>
-            <div className="flex flex-row px-1 mt-3">
+        <navbar className="">
+            <div className="flex flex-row px-1 pb-5 mt-3 border-b-2 border-solid">
                 <div className="flex flex-row basis-1/4">
                     <img src="../images/cabrio-car.png" alt="logo" className="w-16 px-3"/>
                     <p className="pt-2 text-2xl font-extrabold"><a href="#">Majestic Wheels</a></p>
