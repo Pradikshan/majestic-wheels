@@ -1,5 +1,23 @@
+import { useEffect, useState } from "react";
 
 const FleetInfoDisplay = () => {
+
+    const [data, setData] = useState(null);
+    const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        fetch(
+            '../fleetinfo.json'
+        )
+        .then((response) => response.json())
+        .then(setData)
+        .then(() => setLoading(false))
+        .catch(setError);
+    }, []);
+
+    console.log(data);
 
     
 
