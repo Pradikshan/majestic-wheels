@@ -31,6 +31,10 @@
         @apply bg-blue-950 text-white transition ease-in-out delay-150 hover:scale-110 
     }
 
+    tr{
+        @apply border-2 border-b-slate-400
+    }
+
     /* .btn-login{
         @apply ring-4 ring-blue-900 shadow-lg shadow-blue-950 transition ease-in-out delay-150 hover:scale-110
     }
