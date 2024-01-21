@@ -1,3 +1,4 @@
+import FleetSection from "./components/FleetSection";
 import { HeroImage } from "./components/HeroImage";
 import { HeroText } from "./components/HeroText";
 import { InfoSection } from "./components/InfoSection";
@@ -15,6 +16,8 @@ function App() {
       </SplitScreen>
 
       <InfoSection />
+
+      <FleetSection />
     </container>
   );
 }
