@@ -1,6 +1,8 @@
 
 const FleetInfoDisplay = () => {
 
+    
+
     return (
         <div className="grid grid-cols-3 gap-4 mx-8">
             <div className="col-start-1 col-end-2">
