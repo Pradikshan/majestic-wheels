@@ -154,40 +154,55 @@ const FleetInfoDisplay = () => {
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
-                            <table key={vehicle.id} className="table-fixed h-full w-full">
-                              <tbody>
-                                <tr>
-                                  <th>Manufacturer</th>
-                                  <td>{vehicle.manufacturer}</td>
-                                </tr>
-                                <tr>
-                                  <th>Model</th>
-                                  <td>{vehicle.model}</td>
-                                </tr>
-                                <tr>
-                                  <th>Engine size</th>
-                                  <td>{vehicle.engine_size}</td>
-                                </tr>
-                                <tr>
-                                  <th>Year</th>
-                                  <td>{vehicle.year}</td>
-                                </tr>
-                                <tr>
-                                  <th>Doors</th>
-                                  <td>{vehicle.doors}</td>
-                                </tr>
-                                <tr>
-                                  <th>Transmission</th>
-                                  <td>{vehicle.transmission}</td>
-                                </tr>
-                                <tr>
-                                  <th>Fuel</th>
-                                  <td>{vehicle.fuel}</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <>
+                                <table key={vehicle.id} className="table-fixed h-full w-full">
+                                    <tbody>
+                                        <tr>
+                                            <th>Manufacturer</th>
+                                            <td>{vehicle.manufacturer}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Model</th>
+                                            <td>{vehicle.model}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Engine size</th>
+                                            <td>{vehicle.engine_size}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Year</th>
+                                            <td>{vehicle.year}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Doors</th>
+                                            <td>{vehicle.doors}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Transmission</th>
+                                            <td>{vehicle.transmission}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fuel</th>
+                                            <td>{vehicle.fuel}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div className="flex-col">
+                                    <p className="px-3 py-3 flex flex-row text-2xl"><div className="text-2xl font-bold">${vehicle.price}</div>/ per day</p>
+                                    <button className="btn-book ms-2">Book now</button>
+                                </div>  
+                            </>
                           ))}
                       </div>
+
+                      {/* <div className="col-start-3 row-start-3">
+                        {category.vehicles
+                          .filter((vehicle) => vehicle.id === selectedModel)
+                          .map((vehicle) => (
+                            <p key={vehicle.id}>{vehicle.price}</p>
+                          ))
+                        }
+                      </div> */}
                     </>
                   )}
                 </>
