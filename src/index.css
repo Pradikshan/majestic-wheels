@@ -31,8 +31,16 @@
         @apply bg-blue-950 text-white transition ease-in-out delay-150 hover:scale-110 
     }
 
+    .btn-model{
+        @apply bg-slate-200
+    }
+
     tr{
         @apply border-2 border-b-slate-400
+    }
+
+    .bg-selected-category{
+        @apply bg-blue-950 text-white
     }
 
     /* .btn-login{

@@ -53,16 +53,20 @@ const FleetInfoDisplay = () => {
     
 
     return (
-        <div className="grid grid-cols-3 gap-4 mx-8">
+        <div className="grid grid-cols-3 gap-4 mx-8 my-8 shadow-lg rounded-2xl">
           {data.map((category) => (
             <React.Fragment key={category.categoryId}>
-              <div className="col-span-1">
-                <div className="flex flex-row">
+              <button 
+              className={`col-span-1 pb-5 ms-2 ${selectedCategory === category.categoryId ? 'bg-selected-category' : ''}`} 
+              onClick={() => handleCategoryClick(category.categoryId)} 
+              style={style}>
+              {category.category}
+                {/* <div className="flex flex-row">
                   <p onClick={() => handleCategoryClick(category.categoryId)} style={style}>
                     {category.category}
                   </p>
-                </div>
-              </div>
+                </div> */}
+              </button>
               {selectedCategory === category.categoryId && (
                 <>
                   <div className="col-start-1 col-end-2 row-start-2">
@@ -72,7 +76,8 @@ const FleetInfoDisplay = () => {
                           key={vehicle.id}
                           onClick={() => handleModelClick(vehicle.id)}
                           style={style}
-                          className={selectedModel === vehicle.id ? 'active' : ''}
+                          id={selectedModel === vehicle.id ? 'active' : ''}
+                          className="btn-model"
                         >
                           {vehicle.model}
                         </button>
@@ -85,7 +90,7 @@ const FleetInfoDisplay = () => {
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
-                            <img key={vehicle.id} src={vehicle.img} alt="vehicle" />
+                            <img key={vehicle.id} src={vehicle.img} alt="vehicle" className=""/>
                           ))}
                       </div>
                       <div className="col-start-3 row-start-2">
