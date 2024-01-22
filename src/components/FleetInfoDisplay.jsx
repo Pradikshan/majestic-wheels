@@ -56,7 +56,7 @@ const FleetInfoDisplay = () => {
         <div className="grid grid-cols-3 gap-4 mx-8">
           {data.map((category) => (
             <React.Fragment key={category.categoryId}>
-              <div className="col-start-1 col-end-2">
+              <div className="col-span-1">
                 <div className="flex flex-row">
                   <p onClick={() => handleCategoryClick(category.categoryId)} style={style}>
                     {category.category}
@@ -65,10 +65,15 @@ const FleetInfoDisplay = () => {
               </div>
               {selectedCategory === category.categoryId && (
                 <>
-                  <div className="col-start-1 col-end-1 row-start-2">
+                  <div className="col-start-1 col-end-2 row-start-2">
                     <div className="flex flex-col">
                       {category.vehicles.map((vehicle) => (
-                        <button key={vehicle.id} onClick={() => handleModelClick(vehicle.id)} style={style}>
+                        <button
+                          key={vehicle.id}
+                          onClick={() => handleModelClick(vehicle.id)}
+                          style={style}
+                          className={selectedModel === vehicle.id ? 'active' : ''}
+                        >
                           {vehicle.model}
                         </button>
                       ))}
@@ -76,14 +81,14 @@ const FleetInfoDisplay = () => {
                   </div>
                   {selectedModel && (
                     <>
-                      <div className="col-start-2 col-end-2 row-start-2">
+                      <div className="col-start-2 col-end-3 row-start-2">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
                             <img key={vehicle.id} src={vehicle.img} alt="vehicle" />
                           ))}
                       </div>
-                      <div className="col-start-3 col-end-3 row-start-2">
+                      <div className="col-start-3 row-start-2">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (

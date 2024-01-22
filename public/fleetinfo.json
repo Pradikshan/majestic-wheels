@@ -54,5 +54,22 @@
             "img": "./images/sideways.jpg"
         }
     ]
+},
+{
+    "categoryId": 3,
+    "category": "Limo",
+    "vehicles": [
+        {
+            "id": 1,
+            "manufacturer": "Toyota",
+            "model": "Land Cruiser Sahara",
+            "engine_size": "4600cc",
+            "year": 2014,
+            "doors": 4,
+            "transmission": "automatic",
+            "fuel": "petrol",
+            "img": "./images/sideways.jpg"
+        }
+    ]
 }
 ]
