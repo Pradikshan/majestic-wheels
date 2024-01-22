@@ -90,7 +90,7 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/range.jpg",
+            "img": "./images/rover.png",
             "price": "950"
         },
         {
@@ -102,7 +102,7 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/rap.jpg",
+            "img": "./images/raptor.jpg",
             "price": "1000"
         },
         {
@@ -134,6 +134,30 @@
             "fuel": "Petrol",
             "img": "./images/class.jpg",
             "price": "750"
+        },
+        {
+            "id": 2,
+            "manufacturer": "Porsche",
+            "model": "911",
+            "engine_size": "3000cc",
+            "year": 2016,
+            "doors": 4,
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/911.png",
+            "price": "900"
+        },
+        {
+            "id": 3,
+            "manufacturer": "Ford",
+            "model": "Mustang",
+            "engine_size": "2800cc",
+            "year": 2018,
+            "doors": 4,
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/mustang.jpg",
+            "price": "600"
         }
     ]
 }
