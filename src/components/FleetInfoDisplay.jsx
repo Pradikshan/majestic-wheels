@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FadeLoader from "react-spinners/ClipLoader";
+// import FadeLoader from "react-spinners/ClipLoader";
 
 
 const FleetInfoDisplay = () => {
@@ -11,7 +11,7 @@ const FleetInfoDisplay = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedModel, setSelectedModel] = useState(null);
 
-    const [imgLoaded, setImgLoaded] = useState(false);
+    // const [imgLoaded, setImgLoaded] = useState(false);
 
     useEffect(() => {
         setLoading(true);
@@ -55,9 +55,9 @@ const FleetInfoDisplay = () => {
         setSelectedModel(vehicleId);
     };
 
-    const handleImgLoad = () => {
-        setImgLoaded(true);
-    }
+    // const handleImgLoad = () => {
+    //     setImgLoaded(true);
+    // }
 
 
     const style = {cursor: 'pointer'};
@@ -76,11 +76,11 @@ const FleetInfoDisplay = () => {
     
 
     return (
-        <div className="grid grid-cols-3 mx-6 my-8 shadow-lg rounded-b-2xl border-2 border-yellow-950">
+        <div className="grid grid-cols-3 mx-6 my-8 shadow-lg rounded-b-2xl border-2 border-t-black bg-slate-300">
           {data.map((category) => (
             <React.Fragment key={category.categoryId}>
               <button 
-              className={`col-span-1 py-5 ${selectedCategory === category.categoryId ? 'bg-selected-category' : 'bg-slate-400'}`} 
+              className={`btn-category ${selectedCategory === category.categoryId ? 'bg-selected-category' : 'bg-slate-400'}`} 
               onClick={() => handleCategoryClick(category.categoryId)} 
               style={style}>
               {category.category}
@@ -92,7 +92,7 @@ const FleetInfoDisplay = () => {
               </button>
               {selectedCategory === category.categoryId && (
                 <>
-                  <div className="col-start-1 col-end-2 row-start-2">
+                  <div className="col-start-1 col-end-2 row-start-2 ">
                     <div className="flex flex-col">
                       {category.vehicles.map((vehicle) => (
                         <button
@@ -109,7 +109,7 @@ const FleetInfoDisplay = () => {
                   </div>
                   {selectedModel && (
                     <>
-                      {/* <div className="col-start-2 col-end-3 row-start-2 ">
+                      <div className="col-start-2 col-end-3 row-start-2 ps-10 bg-white">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
@@ -117,10 +117,10 @@ const FleetInfoDisplay = () => {
                             key={vehicle.id} 
                             src={vehicle.img} 
                             alt="vehicle" 
-                            className="transition-opacity"/>
+                            className="w-96 h-82"/>
                           ))}
-                      </div> */}
-                      <div className="col-start-2 col-end-3 row-start-2 ">
+                      </div>
+                      {/* <div className="col-start-2 col-end-3 row-start-2">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
@@ -148,13 +148,13 @@ const FleetInfoDisplay = () => {
                                 )}
                             </React.Fragment>
                           ))}
-                      </div>
+                      </div> */}
 
-                      <div className="col-start-3 row-start-2">
+                      <div className="col-start-3 row-start-2 place-self-center pe-2 mb-1">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
-                            <table key={vehicle.id} className="table-auto">
+                            <table key={vehicle.id} className="table-fixed h-full w-full">
                               <tbody>
                                 <tr>
                                   <th>Manufacturer</th>
