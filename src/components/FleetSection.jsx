@@ -3,8 +3,13 @@ import FleetInfoDisplay from "./FleetInfoDisplay";
 const FleetSection = () => {
 
     return (
-    <div className="mt-32">
-        <h1 className="text-start text-4xl font-medium ms-8">Explore our fleet of luxurious vehicles...</h1>
+    <div className="mt-32" id="vehicles">
+        <div className="flex flex-col ps-8 items-center justify-center">
+            <p className="text-5xl font-extrabold my-2">Explore our fleet of luxurious vehicles</p>
+            <p className="text-3xl font-bold my-2">Diverse Vehicle Models</p>
+            <p className="text-md font-medium my-2">Discover an array of exceptional vehicle models in our rental fleet. Whether you're embarking on an adventure or heading out for a business trip, we offer a wide selection to suit your needs.</p>
+        </div>
+        
         <div>
             <FleetInfoDisplay />
         </div>
