@@ -12,7 +12,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/a5_2.jpg"
+            "img": "./images/a5_2.jpg",
+            "price": "400"
         },
         {
             "id": 2,
@@ -23,7 +24,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/a8.jpg"
+            "img": "./images/a8.jpg",
+            "price": "600"
         },
         {
             "id": 3,
@@ -34,7 +36,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/m5_2.jpg"
+            "img": "./images/m5_2.jpg",
+            "price": "690"
         }
     ]
 },
@@ -51,7 +54,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/l.png"
+            "img": "./images/l.png",
+            "price": "800"
         },
         {
             "id": 2,
@@ -62,7 +66,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/cay.jpg"
+            "img": "./images/cay.jpg",
+            "price": "700"
         },
         {
             "id": 3,
@@ -73,7 +78,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/discover.jpg"
+            "img": "./images/discover.jpg",
+            "price": "800"
         },
         {
             "id": 4,
@@ -84,7 +90,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/range.jpg"
+            "img": "./images/range.jpg",
+            "price": "950"
         },
         {
             "id": 5,
@@ -95,7 +102,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/rap.jpg"
+            "img": "./images/rap.jpg",
+            "price": "1000"
         },
         {
             "id": 6,
@@ -106,7 +114,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/wagon.jpg"
+            "img": "./images/wagon.jpg",
+            "price": "1500"
         }
     ]
 },
@@ -123,7 +132,8 @@
             "doors": 4,
             "transmission": "Automatic",
             "fuel": "Petrol",
-            "img": "./images/class.jpg"
+            "img": "./images/class.jpg",
+            "price": "750"
         }
     ]
 }
