@@ -189,7 +189,7 @@ const FleetInfoDisplay = () => {
                                 </table>
                                 <div className="flex-col">
                                     <p className="px-3 py-3 flex flex-row text-2xl"><div className="text-2xl font-bold">${vehicle.price}</div>/ per day</p>
-                                    <button className="btn-book ms-2">Book now</button>
+                                    <button className="btn-book">Book now</button>
                                 </div>  
                             </>
                           ))}

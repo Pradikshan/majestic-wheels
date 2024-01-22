@@ -1,3 +1,4 @@
+import BookingForm from "./components/BookingForm";
 import FleetSection from "./components/FleetSection";
 import { HeroImage } from "./components/HeroImage";
 import { HeroText } from "./components/HeroText";
@@ -18,6 +19,8 @@ function App() {
       <InfoSection />
 
       <FleetSection />
+
+      <BookingForm />
     </container>
   );
 }
