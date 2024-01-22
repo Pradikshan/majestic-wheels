@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import FadeLoader from "react-spinners/ClipLoader";
 
 
 const FleetInfoDisplay = () => {
@@ -8,8 +9,9 @@ const FleetInfoDisplay = () => {
     const [loading, setLoading] = useState(false);
 
     const [selectedCategory, setSelectedCategory] = useState(null);
-
     const [selectedModel, setSelectedModel] = useState(null);
+
+    const [imgLoaded, setImgLoaded] = useState(false);
 
     useEffect(() => {
         setLoading(true);
@@ -21,6 +23,8 @@ const FleetInfoDisplay = () => {
             setData(data);
             setSelectedCategory(data[0].categoryId); 
             setSelectedModel(data[0].vehicles[0].id);;
+            // setSelectedCategory(data && data.length > 0 ? data[0].categoryId : null);
+            // setSelectedModel(data && data.length > 0 && data[0].vehicles.length > 0 ? data[0].vehicles[0].id : null);
         })
         .then(() => setLoading(false))
         .catch(setError)
@@ -30,12 +34,31 @@ const FleetInfoDisplay = () => {
 
     const handleCategoryClick = (categoryId) => {
         setSelectedCategory(categoryId);
-        // selectedModel(null);
+        setSelectedModel(data[0].vehicles[0].id);;
     };
+
+
+
+    // const handleCategoryClick = (categoryId) => {
+    //     setSelectedCategory(categoryId);
+    
+    //     // Find the first vehicle in the new category
+    //     const category = data.find((cat) => cat.categoryId === categoryId);
+    //     const firstVehicleInCategory = category && category.vehicles.length > 0 ? category.vehicles[0] : null;
+    
+    //     // Set the selectedModel to the id of the first vehicle in the new category
+    //     setSelectedModel(firstVehicleInCategory ? firstVehicleInCategory.id : null);
+    //   };
+      
 
     const handleModelClick = (vehicleId) => {
         setSelectedModel(vehicleId);
     };
+
+    const handleImgLoad = () => {
+        setImgLoaded(true);
+    }
+
 
     const style = {cursor: 'pointer'};
 
@@ -53,11 +76,11 @@ const FleetInfoDisplay = () => {
     
 
     return (
-        <div className="grid grid-cols-3 gap-4 mx-8 my-8 shadow-lg rounded-2xl">
+        <div className="grid grid-cols-3 mx-6 my-8 shadow-lg rounded-b-2xl border-2 border-yellow-950">
           {data.map((category) => (
             <React.Fragment key={category.categoryId}>
               <button 
-              className={`col-span-1 pb-5 ms-2 ${selectedCategory === category.categoryId ? 'bg-selected-category' : ''}`} 
+              className={`col-span-1 py-5 ${selectedCategory === category.categoryId ? 'bg-selected-category' : 'bg-slate-400'}`} 
               onClick={() => handleCategoryClick(category.categoryId)} 
               style={style}>
               {category.category}
@@ -77,7 +100,7 @@ const FleetInfoDisplay = () => {
                           onClick={() => handleModelClick(vehicle.id)}
                           style={style}
                           id={selectedModel === vehicle.id ? 'active' : ''}
-                          className="btn-model"
+                          className={`btn-model ${selectedModel === vehicle.id ? 'bg-selected-model' : ''}`}
                         >
                           {vehicle.model}
                         </button>
@@ -86,13 +109,47 @@ const FleetInfoDisplay = () => {
                   </div>
                   {selectedModel && (
                     <>
-                      <div className="col-start-2 col-end-3 row-start-2">
+                      {/* <div className="col-start-2 col-end-3 row-start-2 ">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
-                            <img key={vehicle.id} src={vehicle.img} alt="vehicle" className=""/>
+                            <img 
+                            key={vehicle.id} 
+                            src={vehicle.img} 
+                            alt="vehicle" 
+                            className="transition-opacity"/>
+                          ))}
+                      </div> */}
+                      <div className="col-start-2 col-end-3 row-start-2 ">
+                        {category.vehicles
+                          .filter((vehicle) => vehicle.id === selectedModel)
+                          .map((vehicle) => (
+                            <React.Fragment key={vehicle.id}>
+                                {imgLoaded ? (
+                                    <img 
+                                    key={vehicle.id} 
+                                    src={vehicle.img} 
+                                    alt="vehicle" 
+                                    className="transition-opacity"
+                                    onLoad={handleImgLoad}
+                                    />
+                                ) : (
+                                <div className="spinner-container">
+                                    <FadeLoader size={50} color="#123abc" loading={!imgLoaded} />
+                                    <img
+                                      style={{ display: imgLoaded ? 'block' : 'none' }}
+                                      key={vehicle.id}
+                                      src={vehicle.img}
+                                      alt="vehicle"
+                                      className="transition-opacity"
+                                      onLoad={handleImgLoad}
+                                    />
+                                  </div>
+                                )}
+                            </React.Fragment>
                           ))}
                       </div>
+
                       <div className="col-start-3 row-start-2">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)

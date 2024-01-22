@@ -10,20 +10,20 @@
             "engine_size": "2000cc",
             "year": 2019,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/a5-2.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/a5_2.jpg"
         },
         {
             "id": 2,
             "manufacturer": "Audi",
-            "model": "TT",
+            "model": "A8",
             "engine_size": "2000cc",
-            "year": 2016,
-            "doors": 2,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/tt.jpg"
+            "year": 2022,
+            "doors": 4,
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/a8.jpg"
         },
         {
             "id": 3,
@@ -32,9 +32,9 @@
             "engine_size": "2500cc",
             "year": 2018,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/m5.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/m5_2.jpg"
         }
     ]
 },
@@ -49,9 +49,9 @@
             "engine_size": "4600cc",
             "year": 2014,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/land_cruiser.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/l.png"
         },
         {
             "id": 2,
@@ -60,9 +60,9 @@
             "engine_size": "3600cc",
             "year": 2017,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/cayenne.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/cay.jpg"
         },
         {
             "id": 3,
@@ -71,9 +71,9 @@
             "engine_size": "4000cc",
             "year": 2021,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/land_rover.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/discover.jpg"
         },
         {
             "id": 4,
@@ -82,9 +82,9 @@
             "engine_size": "4600cc",
             "year": 2022,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/range_rover.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/range.jpg"
         },
         {
             "id": 5,
@@ -93,9 +93,9 @@
             "engine_size": "4200cc",
             "year": 2014,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/raptor.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/rap.jpg"
         },
         {
             "id": 6,
@@ -104,9 +104,9 @@
             "engine_size": "4800cc",
             "year": 2021,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/g_wagon2.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/wagon.jpg"
         }
     ]
 },
@@ -121,9 +121,9 @@
             "engine_size": "2500cc",
             "year": 2018,
             "doors": 4,
-            "transmission": "automatic",
-            "fuel": "petrol",
-            "img": "./images/c_class.jpg"
+            "transmission": "Automatic",
+            "fuel": "Petrol",
+            "img": "./images/class.jpg"
         }
     ]
 }

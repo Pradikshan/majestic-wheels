@@ -4,7 +4,7 @@ const FleetSection = () => {
 
     return (
     <div className="mt-32">
-        <h1 className="text-center text-5xl font-medium">Explore Our Fleet...</h1>
+        <h1 className="text-start text-4xl font-medium ms-8">Explore our fleet of luxurious vehicles...</h1>
         <div>
             <FleetInfoDisplay />
         </div>
