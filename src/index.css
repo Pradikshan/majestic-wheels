@@ -39,6 +39,10 @@
         @apply col-span-1 py-5 hover:bg-blue-950 hover:text-xl hover:text-white 
     }
 
+    .btn-book{
+        @apply bg-blue-950 text-white rounded-full px-3 py-3 transition ease-in-out delay-150 hover:scale-110
+    }
+
     tr{
         @apply border-2 border-b-slate-400  border-r-slate-300
     }
