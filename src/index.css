@@ -4,7 +4,7 @@
 
 @layer base{
     html{
-        @apply font-manrope 
+        @apply font-manrope scroll-smooth
     }
 
     li {

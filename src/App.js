@@ -1,3 +1,4 @@
+import { AboutUsSection } from "./components/AboutUsSection";
 import BookingForm from "./components/BookingForm";
 import FleetSection from "./components/FleetSection";
 import { HeroImage } from "./components/HeroImage";
@@ -8,7 +9,7 @@ import SplitScreen from "./components/SplitScreen";
 
 function App() {
   return (
-    <container>
+    <div>
       <Navbar />
 
       <div className="bg-hero-bg bg-cover bg-center">
@@ -18,13 +19,15 @@ function App() {
       </SplitScreen>
       </div>
 
-
       <InfoSection />
 
       <FleetSection />
 
       <BookingForm />
-    </container>
+
+      <AboutUsSection />
+
+    </div>
   );
 }
 
