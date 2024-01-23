@@ -13,7 +13,7 @@ module.exports = {
         quicksand: ['Quicksand']
       },
       backgroundImage: {
-        "my-image": "url(../public/images/white_bg.jpg)",
+        "form-image": "url(../public/images/white_bg.jpg)",
         "hero-bg": "url(../public/images/hero_bg.jpg)"
       }
     },
