@@ -12,6 +12,10 @@ module.exports = {
         manrope: ['Manrope'],
         quicksand: ['Quicksand']
       },
+      backgroundImage: {
+        "my-image": "url(../public/images/white_bg.jpg)",
+        "hero-bg": "url(../public/images/hero_bg.jpg)"
+      }
     },
   },
   plugins: [],
