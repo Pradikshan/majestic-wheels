@@ -11,10 +11,13 @@ function App() {
     <container>
       <Navbar />
 
+      <div className="bg-hero-bg bg-cover bg-center">
       <SplitScreen>
         <HeroImage />
         <HeroText />
       </SplitScreen>
+      </div>
+
 
       <InfoSection />
 
