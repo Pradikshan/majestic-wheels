@@ -63,6 +63,18 @@
         @apply bg-blue-950 text-white text-xl 
     }
 
+    label{
+        @apply text-lg font-semibold pt-5
+    }
+
+    input{
+        @apply w-2/3 border-2 border-rose-500 rounded-lg py-1 px-1
+    }
+
+    textarea{
+        @apply w-2/3 py-1 px-1
+    }
+
     /* .btn-login{
         @apply ring-4 ring-blue-900 shadow-lg shadow-blue-950 transition ease-in-out delay-150 hover:scale-110
     }
