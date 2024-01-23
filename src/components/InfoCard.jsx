@@ -9,7 +9,7 @@ const InfoCard = ({
             <div className="flex flex-col items-center">
                 {cardIcon}
                 <p className="text-2xl">{cardTitle}</p>
-                <p className="text-md text-center pt-5 pb-3 italic">{cardText}</p>
+                <p className="text-md text-center pt-5 pb-3">{cardText}</p>
             </div>
         </div>
     );
