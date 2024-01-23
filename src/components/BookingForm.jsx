@@ -1,5 +1,22 @@
 const BookingForm = () => {
-    console.log(new Date());
+    // console.log(new Date());
+
+    // console.log(document.querySelectorAll("input"));
+
+    const formValidate = () => {
+        const inputElements = document.querySelectorAll("input");
+      
+        inputElements.forEach((input) => {
+          if (input.value === '') {
+            input.classList.add('border-rose-500');
+            input.classList.remove('border-green-500'); // Remove the other class if present
+          } else {
+            input.classList.remove('border-rose-500'); // Remove the error class if present
+            input.classList.add('border-green-500');
+          }
+        });
+      };
+      
     return (
         // <div className="rounded-lg shadow-lg mx-24 bg-slate-200">
         //     <form className="mx-10">
@@ -74,35 +91,35 @@ const BookingForm = () => {
                         <div className="col-span-1">
                             <div className="flex flex-col">
                                 <label for="first_name">First name:</label>
-                                <input type="text" name="first_name"/>
+                                <input type="text" name="first_name" required onChange={formValidate}/>
                             </div>
                         </div>
 
                         <div className="col-span-1">
                             <div className="flex flex-col">
                                 <label for="last_name">Last name:</label>
-                                <input type="text" name="last_name"/>
+                                <input type="text" name="last_name" required onChange={formValidate}/>
                             </div>
                         </div>
 
                         <div className="col-span-1">
                             <div className="flex flex-col">
                                 <label for="Email">Email:</label>
-                                <input type="email" name="email"/>
+                                <input type="email" name="email" required onChange={formValidate}/>
                             </div>
                         </div>
 
                         <div className="col-span-1">
                             <div className="flex flex-col">
                                 <label for="phone_number">Phone number:</label>
-                                <input type="number" name="phone_number"/>
+                                <input type="number" name="phone_number" required onChange={formValidate}/>
                             </div>
                         </div>
 
                         <div className="col-span-1">
                             <div className="flex flex-col">
                                 <label for="pickup_date">Pick-up date:</label>
-                                <input type="date" name="pickup_date"/>
+                                <input type="date" name="pickup_date" required onChange={formValidate}/>
                             </div>
                         </div>
 
@@ -110,14 +127,14 @@ const BookingForm = () => {
                         <div className="col-span-1">
                             <div className="flex flex-col">
                                 <label for="dropoff_date">Drop-off date:</label>
-                                <input type="date" name="dropoff_date"/>
+                                <input type="date" name="dropoff_date" required onChange={formValidate}/>
                             </div>
                         </div>
 
                         <div className="col-span-1">
                             <div className="flex flex-col">
                                 <label for="inquires">Inquires:</label>
-                                <textarea className="border-2 border-rose-500 rounded-lg" type="text" name="inquires"/> 
+                                <textarea type="text" name="inquires"/> 
                             </div>
                         </div>
                     </div>
