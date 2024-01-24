@@ -79,8 +79,8 @@ const BookingForm = () => {
         //     </form>
         // </div>
 
-        <div className="flex justify-center bg-form-image bg-cover bg-center">
-            <div className="rounded-3xl shadow-2xl my-16 w-3/4 py-4 bg-form-image bg-cover bg-center">
+        <div className="flex justify-center">
+            <div className="rounded-3xl shadow-2xl my-16 w-3/4 py-4">
             {/* <div
             className="absolute inset-0 bg-cover bg-center z-0"
             style={{ backgroundImage: 'url("../public/images/m5.jpg")' }}
