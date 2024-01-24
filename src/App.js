@@ -12,23 +12,26 @@ function App() {
   return (
     <div>
       <Navbar />
+      <div className="bg-background-image bg-cover bg-center">
+        <div className="bg-hero-bg bg-cover bg-center">
+          <SplitScreen>
+            <HeroImage />
+            <HeroText />
+          </SplitScreen>
+        </div>
 
-      <div className="bg-hero-bg bg-cover bg-center">
-        <SplitScreen>
-          <HeroImage />
-          <HeroText />
-        </SplitScreen>
+        <InfoSection />
+
+        <FleetSection />
+
+        <BookingForm />
+
+        <AboutUsSection />
+
+        <TestimonialSection />
+
       </div>
-
-      <InfoSection />
-
-      <FleetSection />
-
-      <BookingForm />
-
-      <AboutUsSection />
-
-      <TestimonialSection />
+      
 
     </div>
   );
