@@ -5,7 +5,7 @@ const TestimonialCard = ({ image, name, testimonial }) => {
     // const style = { color: "text-yellow-300"}
     
     return (
-        <div className="flex flex-row rounded-lg shadow-lg w-3/4 px-2 py-2 m-5 bg-slate-50">
+        <div className="flex flex-row rounded-lg shadow-lg w-3/4 p-5 m-5 bg-slate-50">
             {/* <div className="col-start-1 col-end-1 row-start-1">
                 <img src={`${image}`} alt="customer" className="w-24 h-24 object-cover rounded-full "/>
             </div>
