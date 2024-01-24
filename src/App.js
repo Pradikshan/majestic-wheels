@@ -6,6 +6,7 @@ import { HeroText } from "./components/HeroText";
 import { InfoSection } from "./components/InfoSection";
 import Navbar from "./components/Navbar";
 import SplitScreen from "./components/SplitScreen";
+import { TestimonialSection } from "./components/TestimonialSection";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <BookingForm />
 
       <AboutUsSection />
+
+      <TestimonialSection />
 
     </div>
   );
