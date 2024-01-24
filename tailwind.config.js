@@ -15,7 +15,7 @@ module.exports = {
       backgroundImage: {
         "form-image": "url(../public/images/bg5.jpg)",
         "hero-bg": "url(../public/images/hero_bg.jpg)",
-        "background-image": "url(../public/images/bg5.jpg)"
+        "background-image": "url(../public/images/bg6.jpg)"
       }
     },
   },
