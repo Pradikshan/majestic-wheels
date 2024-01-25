@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "question": "How do I make a reservation?",
+        "answer": "You can easily make a reservation by filling out our online booking form on our website or by contacting our reservation team at +11696969696."
+    },
+    {
+        "id": 2,
+        "question": "What types of vehciles do you offer?",
+        "answer": "We offer a diverse range of vehicles, including premium sedans, spacious SUVs, luxury cars from top brands, and unique specialty vehicles for those looking for an extraordinary experience. You can view our current fleet of vehicles in our website."
+    },
+    {
+        "id": 3,
+        "question": "What are the rental requirements?",
+        "answer": "To rent a vehicle, you need a valid driver's license, be at least 25 years old, and have a major credit card. International visitors may need additional documentation."
+    },
+    {
+        "id": 4,
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellations made two days prior to the reservation date are fully refundable. Late cancellations or no-shows may incur a cancellation fee."
+    },
+    {
+        "id": 5,
+        "question": "Are there mileage restrictions?",
+        "answer": "Our standard rental packages include unlimited mileage, allowing you to enjoy your journey without worrying about additional charges based on distance traveled."
+    },
+    {
+        "id": 6,
+        "question": "Do you offer delivery and pickup services?",
+        "answer": "Yes, we provide convenient delivery and pickup services. Contact our team for details and associated fees based on your location."
+    },
+    {
+        "id": 7,
+        "question": "What happens in case of a breakdown or emergency?",
+        "answer": "In case of a breakdown or emergency, please contact our 24/7 roadside assistance hotline at +11420192789 for immediate support."
+    },
+    {
+        "id": 8,
+        "question": "Can I extend my rental period?",
+        "answer": "Yes, you can extend your rental period by contacting our reservation team. Additional charges may apply, and extensions are subject to availability."
+    },
+    {
+        "id": 9,
+        "question": "What fuel policies do you have?",
+        "answer": "We request that you return the vehicle with a full tank of gas. If not, we offer fueling options at competitive rates."
+    },
+    {
+        "id": 10,
+        "question": "Are additional drivers allowed?",
+        "answer": "Yes, additional drivers are allowed. There may be a fee for each additional driver added to the rental agreement."
+    },
+    {
+        "id": 11,
+        "question": "How do I pay for my rental?",
+        "answer": "We accept major credit cards. A reservation deposit is required, and the remaining balance can be settled upon vehicle pickup."
+    },
+    {
+        "id": 12,
+        "question": "What is the minimum age for renting a luxury vehicle?",
+        "answer": "The minimum age for renting a luxury vehicle is 25 years. Drivers aged 21-24 may be subject to a young driver surcharge."
+    },
+    {
+        "id": 13,
+        "question": "Do you provide child seats or special equipment?",
+        "answer": "Yes, we offer child seats, GPS devices, and other special equipment for an additional fee. Please request these items during the reservation process."
+    },
+    {
+        "id": 14,
+        "question": "What is the cleanliness policy for returned vehicles?",
+        "answer": "We appreciate the return of vehicles in a reasonably clean condition. Excessive dirt or damage may result in additional cleaning fees."
+    }
+]
