@@ -26,7 +26,19 @@ const FAQSection = () => {
     // console.log(data);
 
     return (
-    
+    <div className="mt-32 mb-10" id="vehicles">
+        <div className="flex flex-col ps-8 items-center justify-center">
+            <p className="text-5xl font-extrabold my-2">Frequently Asked Questions</p>
+            <p className="text-md font-medium mt-2 mb-10">Explore our frequently asked questions to make your luxury vehicle rental experience smooth and hassle-free.</p>
+            {data.map((item) => (
+                <DropdownCard key={item.id} title={item.question} dropdown={item.answer}/>
+            ))}
+        </div>
+        
+        <div>
+            
+        </div>
+    </div>
     );
 
 }
