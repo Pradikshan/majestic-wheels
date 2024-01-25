@@ -71,9 +71,10 @@
         @apply text-lg font-semibold pt-5
     }
 
-    input{
+    input, select{
         @apply w-2/3 rounded-lg py-1 px-1 border-2
     }
+
 
     textarea{
         @apply w-2/3 py-1 px-1 border-2 border-black rounded-lg
