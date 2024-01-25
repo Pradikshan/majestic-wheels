@@ -1,7 +1,31 @@
+import { useEffect, useState } from "react";
+
 const BookingForm = () => {
     // console.log(new Date());
 
     // console.log(document.querySelectorAll("input"));
+
+    const [data, setData] = useState(null);
+    const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    const [model, setModel] = useState('');
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('../fleetinfo.json');
+                const data = await response.json();
+                setData(data);
+                setLoading(false);
+            } catch (error) {
+                setError(error);
+            }
+        };
+
+        fetchData();
+    }, []);
+    
 
     const formValidate = () => {
         const inputElements = document.querySelectorAll("input");
@@ -15,7 +39,19 @@ const BookingForm = () => {
             input.classList.add('border-green-500');
           }
         });
-      };
+    };
+
+    const handleCategoryClick = (categoryId) => {
+        setModel(categoryId);
+    }
+
+    
+    if (loading) return <h1>Loading...</h1>;
+
+    if (error)
+        return <p>{JSON.stringify(error)}</p>;
+
+    if(!data) return null;
       
     return (
         // <div className="rounded-lg shadow-lg mx-24 bg-slate-200">
@@ -115,6 +151,29 @@ const BookingForm = () => {
                                 <input type="number" name="phone_number" required onChange={formValidate}/>
                             </div>
                         </div>
+
+                        <div className="col-span-1">
+                            <div className="flex flex-col">
+                                <label for="type">Select vehicle type:</label>
+                                <select>
+                                    {data.map((category) => (
+                                        <option key={category.categoryId} >{category.category}</option>
+                                    ))}
+                                </select>
+                            </div>
+                        </div>
+
+                        <div className="col-span-1">
+                            <div className="flex flex-col">
+                                <label for="model">Select vehicle model:</label>
+                                <select>
+                                    
+                                </select>
+                            </div>
+                        </div>
+
+
+
 
                         <div className="col-span-1">
                             <div className="flex flex-col">
