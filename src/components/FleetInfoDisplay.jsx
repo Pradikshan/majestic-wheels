@@ -22,7 +22,7 @@ const FleetInfoDisplay = () => {
         .then((data) => {
             setData(data);
             setSelectedCategory(data[0].categoryId); 
-            setSelectedModel(data[0].vehicles[0].id);;
+            setSelectedModel(data[0].vehicles[0].id);
             // setSelectedCategory(data && data.length > 0 ? data[0].categoryId : null);
             // setSelectedModel(data && data.length > 0 && data[0].vehicles.length > 0 ? data[0].vehicles[0].id : null);
         })
@@ -34,7 +34,7 @@ const FleetInfoDisplay = () => {
 
     const handleCategoryClick = (categoryId) => {
         setSelectedCategory(categoryId);
-        setSelectedModel(data[0].vehicles[0].id);;
+        setSelectedModel(data[0].vehicles[0].id);
     };
 
 
