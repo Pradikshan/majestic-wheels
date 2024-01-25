@@ -1,5 +1,6 @@
 import { AboutUsSection } from "./components/AboutUsSection";
 import BookingForm from "./components/BookingForm";
+import FAQSection from "./components/FAQSection";
 import FleetSection from "./components/FleetSection";
 import { HeroImage } from "./components/HeroImage";
 import { HeroText } from "./components/HeroText";
@@ -29,6 +30,10 @@ function App() {
         <AboutUsSection />
 
         <TestimonialSection />
+
+        <FAQSection />
+
+        
 
       </div>
       
