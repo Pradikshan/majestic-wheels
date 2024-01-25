@@ -2,7 +2,7 @@ import { IoCarSportOutline } from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <navbar className="">
+        <navbar>
             <div className="flex flex-row px-1 pb-5 mt-3">
                 <div className="flex flex-row basis-1/4 ps-8">
                     <IoCarSportOutline style={{fontSize: "30"}}  className="self-center me-2 mt-2"/>
