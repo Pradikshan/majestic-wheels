@@ -2,6 +2,7 @@ import { AboutUsSection } from "./components/AboutUsSection";
 import BookingForm from "./components/BookingForm";
 import FAQSection from "./components/FAQSection";
 import FleetSection from "./components/FleetSection";
+import Footer from "./components/Footer";
 import { HeroImage } from "./components/HeroImage";
 import { HeroText } from "./components/HeroText";
 import { InfoSection } from "./components/InfoSection";
@@ -32,6 +33,8 @@ function App() {
         <TestimonialSection />
 
         <FAQSection />
+
+        <Footer />
 
         
 
