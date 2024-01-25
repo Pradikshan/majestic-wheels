@@ -13,7 +13,7 @@ export const TestimonialSection = () => {
             <div className="flex flex-row justify-center">
                 <TestimonialCard image={"../images/aldo.jpg"} name={"Aldo Raine"} testimonial={"Outstanding service, just like taking down the enemy. These folks know their stuff, and my travel experience with them was as precise as a Basterd's mission. Highly recommend for a journey that's a true knockout!"} />
                 <TestimonialCard image={"../images/hans.jpg"} name={"Hans Landa"} testimonial={"An impeccable journey with meticulous attention to detail. This establishment, much like a Shosanna Dreyfus plot, ensures every aspect is flawlessly executed. For those who appreciate nothing less than perfection."} />
-                <TestimonialCard image={"../images/shosanna3.jpg"} name={"Shosanna"} testimonial={"Indulgence redefined. From the moment you step in, it's a journey of elegance and refinement. Choose this service for a taste of luxury that rivals the grandeur of the silver screen. For those who demand nothing but the best."} />
+                <TestimonialCard image={"../images/shosanna3.jpg"} name={"Shosanna"} testimonial={"Indulgence redefined. From the moment you step in, it's a journey of elegance and refinement. Choose this service for a taste of luxury that rivals the grandeur of the silver screen."} />
             </div>
         </>
 
