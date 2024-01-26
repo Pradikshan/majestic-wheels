@@ -2,8 +2,8 @@ import { IoCarSportOutline } from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <navbar>
-            <div className="flex flex-row px-1 pb-5 mt-3">
+        <navbar className="sticky top-0 bg-slate-50">
+            <div className="flex flex-row px-1 py-5 bg-slate-50">
                 <div className="flex flex-row basis-1/4 ps-8">
                     <IoCarSportOutline style={{fontSize: "30"}}  className="self-center me-2 mt-2"/>
                     {/* <img src="../images/cabrio-car.png" alt="logo" className="w-16 px-3"/> */}
