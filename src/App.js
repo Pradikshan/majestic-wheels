@@ -7,10 +7,14 @@ import { HeroImage } from "./components/HeroImage";
 import { HeroText } from "./components/HeroText";
 import { InfoSection } from "./components/InfoSection";
 import Navbar from "./components/Navbar";
+import ScrollAnimation from "./components/ScrollAnimation";
 import SplitScreen from "./components/SplitScreen";
 import { TestimonialSection } from "./components/TestimonialSection";
 
+
+
 function App() {
+
   return (
     <div>
       <Navbar />
@@ -22,25 +26,32 @@ function App() {
           </SplitScreen>
         </div>
 
-        <InfoSection />
+        <ScrollAnimation>
+          <InfoSection />
+        </ScrollAnimation>
+          
+        <ScrollAnimation>
+          <FleetSection />
+        </ScrollAnimation>
 
-        <FleetSection />
+        <ScrollAnimation>
+          <BookingForm />
+        </ScrollAnimation>
 
-        <BookingForm />
+        <ScrollAnimation>
+          <AboutUsSection />
+        </ScrollAnimation>
 
-        <AboutUsSection />
+        <ScrollAnimation>
+          <TestimonialSection />
+        </ScrollAnimation>
 
-        <TestimonialSection />
-
-        <FAQSection />
+        <ScrollAnimation>
+          <FAQSection />
+        </ScrollAnimation>
 
         <Footer />
-
-        
-
       </div>
-      
-
     </div>
   );
 }
