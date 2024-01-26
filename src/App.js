@@ -19,7 +19,7 @@ function App() {
     <div>
       <Navbar />
       <div className="bg-background-image bg-cover bg-center">
-        <div className="bg-hero-bg bg-cover bg-center">
+        <div id="home" className="bg-hero-bg bg-cover bg-center">
           <SplitScreen>
             <HeroImage />
             <HeroText />
