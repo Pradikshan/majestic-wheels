@@ -9,7 +9,10 @@ const BookingForm = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const [model, setModel] = useState('');
+    // const [selectedCategory, setSelectedCategory] = useState(null);
+    // const [selectedModel, setSelectedModel] = useState(null);
+ 
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -17,6 +20,8 @@ const BookingForm = () => {
                 const response = await fetch('../fleetinfo.json');
                 const data = await response.json();
                 setData(data);
+                // setSelectedCategory(data[0]?.categoryId || null);
+                // setSelectedModel(data[0]?.vehicles[0]?.model || null);
                 setLoading(false);
             } catch (error) {
                 setError(error);
@@ -41,10 +46,15 @@ const BookingForm = () => {
         });
     };
 
-    const handleCategoryClick = (categoryId) => {
-        setModel(categoryId);
-    }
-
+    // const handleCategoryChange = (e) => {
+    //     setSelectedCategory(e.target.value);
+    //     // Set the selectedModel to the first model in the new category
+    //     setSelectedModel(data.find((category) => category.categoryId === e.target.value)?.vehicles[0]?.model || null);
+    //   };
+    
+    //   const handleModelChange = (e) => {
+    //     setSelectedModel(e.target.value);
+    //   };
     
     if (loading) return <h1>Loading...</h1>;
 
@@ -152,28 +162,41 @@ const BookingForm = () => {
                             </div>
                         </div>
 
+                        {/* {data.map((category) => (
+                            <div key={category.categoryId} className="col-span-1">
+                            <div className="flex flex-col">
+                                <label htmlFor="type">Select vehicle type:</label>
+                                <select value={selectedCategory} onChange={handleCategoryChange}>
+                                <option value={category.categoryId}>{category.category}</option>
+                                </select>
+                            </div>
+                            <div className="flex flex-col">
+                                <label htmlFor="model">Select vehicle model:</label>
+                                <select value={selectedModel} onChange={handleModelChange}>
+                                {category.vehicles.map((vehicle) => (
+                                    <option key={vehicle.id} value={vehicle.model}>
+                                    {vehicle.model}
+                                    </option>
+                                ))}
+                                </select>
+                            </div>
+                            </div>
+                        ))} */}
+
                         <div className="col-span-1">
                             <div className="flex flex-col">
-                                <label for="type">Select vehicle type:</label>
+                                <label for="vehicle">Select vehicle:</label>
                                 <select>
-                                    {data.map((category) => (
-                                        <option key={category.categoryId} >{category.category}</option>
-                                    ))}
+                                {data.flatMap((category) =>
+                                    category.vehicles.map((vehicle) => (
+                                        <option key={vehicle.id} value={vehicle.id}>
+                                            {vehicle.model}
+                                        </option>
+                                    ))
+                                )}
                                 </select>
                             </div>
                         </div>
-
-                        <div className="col-span-1">
-                            <div className="flex flex-col">
-                                <label for="model">Select vehicle model:</label>
-                                <select>
-                                    
-                                </select>
-                            </div>
-                        </div>
-
-
-
 
                         <div className="col-span-1">
                             <div className="flex flex-col">
