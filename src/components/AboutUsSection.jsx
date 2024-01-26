@@ -8,7 +8,7 @@ export const AboutUsSection = () => {
     const style = {fontSize: "65"};
 
     return(
-        <div className="mt-32">
+        <div id="about" className="mt-24">
             <h1 className="text-center text-5xl font-extrabold">Why choose us?</h1>
             <div className="flex flex-row justify-center">
                 <InfoCard 

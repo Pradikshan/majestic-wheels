@@ -5,7 +5,7 @@ const InfoCard = ({
     cardText
 }) => {
     return (
-        <div className="shadow-lg rounded-lg w-1/4 mx-10 my-16 px-3 py-3 bg-slate-50 transition ease-in-out delay-100 hover:scale-110">
+        <div className="shadow-lg rounded-lg w-1/4 mx-10 my-10 px-3 py-3 bg-slate-50 transition ease-in-out delay-100 hover:scale-110">
             <div className="flex flex-col items-center">
                 {cardIcon}
                 <p className="text-2xl cursor-default font-semibold">{cardTitle}</p>

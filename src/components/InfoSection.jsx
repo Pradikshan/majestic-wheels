@@ -9,7 +9,7 @@ export const InfoSection = () => {
 
     return(
         
-        <div className="mt-32">
+        <div id="info" className="mt-36">
             <p className="text-center text-5xl font-extrabold">Effortlessly arrange your ride</p>
             <div className="flex flex-row justify-center">
                 <InfoCard 
@@ -25,8 +25,6 @@ export const InfoSection = () => {
                 cardTitle={"Arrive in Style"} 
                 cardText={"Experience unmatched luxury as you make a grand entrance in our fleet of stylish and meticulously maintained vehicles"}/>            
             </div>
-
-            
         </div>
         
     );

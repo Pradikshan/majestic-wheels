@@ -3,7 +3,7 @@ import FleetInfoDisplay from "./FleetInfoDisplay";
 const FleetSection = () => {
 
     return (
-    <div className="mt-32" id="vehicles">
+    <div className="mt-20" id="vehicles">
         <div className="flex flex-col ps-8 items-center justify-center">
             <p className="text-5xl font-extrabold my-2">Explore our fleet of luxurious vehicles</p>
             <p className="text-3xl font-bold my-2">Diverse Vehicle Models</p>

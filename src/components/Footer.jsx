@@ -4,7 +4,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <div className="bg-blue-950 text-white p-5">
+        <div id="footer" className="bg-blue-950 text-white p-5 mt-20">
            <div className="grid grid-cols-4 gap-4">
             <div className="flex flex-col">
                 <p className="font-bold">Get in touch</p>
