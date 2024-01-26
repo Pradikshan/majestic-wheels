@@ -12,15 +12,21 @@ const Navbar = () => {
                 
                 <ul className="flex pt-2 basis-1/2 justify-center">
                     <li>
-                        <a href="#">Home</a></li>
+                        <a href="#home">Home</a></li>
                     <li>
                         <a href="#vehicles">Vehicles</a>
                     </li>
                     <li>
-                        <a href="#">Testimonials</a>
+                        <a href="#testimonial">Testimonials</a>
                     </li>
                     <li>
-                        <a href="#">Contact us</a>
+                        <a href="#FAQ">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Contact us</a>
                     </li>
                 </ul>
 
