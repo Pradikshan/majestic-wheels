@@ -190,7 +190,7 @@ const BookingForm = () => {
                                 {data.flatMap((category) =>
                                     category.vehicles.map((vehicle) => (
                                         <option key={vehicle.id} value={vehicle.id}>
-                                            {vehicle.model}
+                                            {`${vehicle.manufacturer} ${vehicle.model}`}
                                         </option>
                                     ))
                                 )}
@@ -218,6 +218,10 @@ const BookingForm = () => {
                                 <label for="inquires">Inquires:</label>
                                 <textarea type="text" name="inquires"/> 
                             </div>
+                        </div>
+
+                        <div className="col-span-1">
+                            <button className="btn-rent">Book now</button>
                         </div>
                     </div>
 
