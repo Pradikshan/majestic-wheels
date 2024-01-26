@@ -7,6 +7,10 @@
         @apply font-manrope scroll-smooth
     }
 
+    .navbar{
+        @apply bg-slate-900
+    }
+
     li {
         @apply px-3 transition ease-in-out delay-100 hover:scale-110 
     }
@@ -45,6 +49,10 @@
 
     .btn-sub{
         @apply bg-slate-50 rounded-lg block text-black font-semibold px-3 py-1 w-28 mt-3 transition ease-in-out hover:bg-blue-900 hover:text-white
+    }
+
+    .btn-rent{
+        @apply bg-blue-950 text-white transition w-1/2 p-2  ease-in-out delay-100 hover:scale-110
     }
 
     tr{
