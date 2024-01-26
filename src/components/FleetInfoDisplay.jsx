@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
 // import FadeLoader from "react-spinners/ClipLoader";
 
 
@@ -189,7 +190,11 @@ const FleetInfoDisplay = () => {
                                 </table>
                                 <div className="flex-col">
                                     <p className="px-3 py-3 flex flex-row text-2xl"><div className="text-2xl font-bold">${vehicle.price}</div>/ per day</p>
-                                    <button className="btn-book">Book now</button>
+                                    <button className="btn-book">
+                                      <Link to="booking" smooth={true} duration={500}>
+                                        Book now
+                                      </Link>
+                                    </button>
                                 </div>  
                             </>
                           ))}
