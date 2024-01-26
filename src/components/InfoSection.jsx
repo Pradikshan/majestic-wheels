@@ -3,12 +3,14 @@ import { PiContactlessPayment } from "react-icons/pi";
 import { PiCarProfile } from "react-icons/pi";
 import { PiCallBell } from "react-icons/pi";
 
+
 export const InfoSection = () => {
     const style = {fontSize: "65"};
 
     return(
+        
         <div className="mt-32">
-            <h1 className="text-center text-5xl font-extrabold">Effortlessly arrange your ride</h1>
+            <p className="text-center text-5xl font-extrabold">Effortlessly arrange your ride</p>
             <div className="flex flex-row justify-center">
                 <InfoCard 
                 cardIcon={<PiCallBell style={style}/>} 
@@ -21,11 +23,11 @@ export const InfoSection = () => {
                 <InfoCard 
                 cardIcon={<PiCarProfile  style={style}/>} 
                 cardTitle={"Arrive in Style"} 
-                cardText={"Experience unmatched luxury as you make a grand entrance in our fleet of stylish and meticulously maintained vehicles"}/>
-
-                
+                cardText={"Experience unmatched luxury as you make a grand entrance in our fleet of stylish and meticulously maintained vehicles"}/>            
             </div>
-        </div>
 
+            
+        </div>
+        
     );
 }
