@@ -1,4 +1,3 @@
-import { IoCarSportOutline } from "react-icons/io5";
 import { FaInstagram, FaTwitter, FaSquareFacebook, FaTiktok, FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 
