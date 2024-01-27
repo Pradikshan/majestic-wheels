@@ -92,6 +92,14 @@
         @apply text-yellow-300 text-2xl
     }
 
+    ul.menu > li a{
+        @apply text-2xl
+    }
+
+    ul.menu li{
+        @apply my-10
+    }
+
 
     /* .btn-login{
         @apply ring-4 ring-blue-900 shadow-lg shadow-blue-950 transition ease-in-out delay-150 hover:scale-110
