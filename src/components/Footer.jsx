@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="pe-2">
                         <MdOutlineMailOutline />
                     </div>
-                    <p>majesticwheels@business.com</p>
+                    <p className="sm:truncate">majesticwheels@business.com</p>
                 </div>
 
                 <p className="font-bold mt-6">Follow us on</p>
