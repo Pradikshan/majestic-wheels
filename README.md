@@ -4,8 +4,8 @@ Majestic Wheels is not just a car rental website; it's your gateway to luxury on
 
 ## Built with:
 
-- ![Tailwind icon](./public/images/tailwind.jpg)Tailwind CSS
 - ![React icon](./public/images/react.jpg)ReactJS
+- ![Tailwind icon](./public/images/tailwind.jpg)Tailwind CSS
 
 ### Live demo
 
