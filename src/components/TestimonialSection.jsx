@@ -6,7 +6,7 @@ export const TestimonialSection = () => {
     return(
         <>
             <div id="testimonial" className="mt-24 flex flex-col items-center justify-center">
-                <p className="text-center text-5xl font-extrabold">Customer testimonials</p>
+                <p className="text-center text-4xl sm:text-5xl font-extrabold">Customer testimonials</p>
                 <p className="text-lg">Discover what our satisfied customers have to say about their extraordinary experiences with us</p>
             </div>
 
