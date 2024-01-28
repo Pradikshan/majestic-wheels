@@ -4,7 +4,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 const Footer = () => {
     return (
         <div id="footer" className="bg-blue-950 text-white p-5 mt-20">
-           <div className="grid grid-cols-4 gap-4">
+           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
             <div className="flex flex-col">
                 <p className="font-bold">Get in touch</p>
                 <div className="flex flex-row items-center">
@@ -39,27 +39,34 @@ const Footer = () => {
                     <FaTiktok />
                     </div>
                 </div>
-
+                {window.innerWidth >= 600 ? (
                 <p className="mt-8">&copy; 2024 Majestic Wheels, Inc. All Rights Reserved</p>
+
+                ) : null}
             </div>
 
-            <div className="justify-self-center">
+            <div className="sm:justify-self-center">
                 <p className="font-bold">Working hours:</p>
                 <p className="mt-1">Monday - Saturday <br/> 09:00 AM - 06:00 PM <br/>Saturday - Sunday <br/> 09:00AM - 02:00PM</p>
             </div>
 
-            <div className="justify-self-center">
+            <div className="sm:justify-self-center">
                 <p className="font-bold">Support</p>
                 <p>FAQ</p>
                 <p>Privacy Policy</p>
             </div>
 
-            <div className="">
+            <div>
                 <p className="font-bold">Newsletter</p>
                 <p>Subscribe to our newsletter</p>
                 <input type="email" name="newsletter" placeholder="Enter your email"/>
                 <button className="btn-sub">Subscribe</button>
             </div>
+
+            {window.innerWidth <= 600 ? (
+            <p className="mt-4">&copy; 2024 Majestic Wheels, Inc. All Rights Reserved</p>
+
+            ) : null}
            </div>
         </div>
     );
