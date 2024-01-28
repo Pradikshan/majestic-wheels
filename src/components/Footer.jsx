@@ -12,8 +12,6 @@ const Footer = () => {
         setEmail('');
 
         alert("You have subscribed to our newsletter!");
-
-        
     }
 
     return (
