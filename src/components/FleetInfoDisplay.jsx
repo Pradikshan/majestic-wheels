@@ -61,8 +61,6 @@ const FleetInfoDisplay = () => {
     // }
 
 
-    const style = {cursor: 'pointer'};
-
     // console.log(data);
 
     if (loading) return <h1>Loading...</h1>;
@@ -83,7 +81,7 @@ const FleetInfoDisplay = () => {
               <button 
               className={`btn-category ${selectedCategory === category.categoryId ? 'bg-selected-category' : 'bg-slate-400'}`} 
               onClick={() => handleCategoryClick(category.categoryId)} 
-              style={style}>
+              >
               {category.category}
                 {/* <div className="flex flex-row">
                   <p onClick={() => handleCategoryClick(category.categoryId)} style={style}>
@@ -93,13 +91,12 @@ const FleetInfoDisplay = () => {
               </button>
               {selectedCategory === category.categoryId && (
                 <>
-                  <div className="col-start-1 col-end-2 row-start-2 ">
-                    <div className="flex flex-col">
+                  <div className="col-start-1 col-end-3 sm:col-end-2 row-start-2">
+                    <div className="flex flex-row sm:flex-col">
                       {category.vehicles.map((vehicle) => (
                         <button
                           key={vehicle.id}
                           onClick={() => handleModelClick(vehicle.id)}
-                          style={style}
                           id={selectedModel === vehicle.id ? 'active' : ''}
                           className={`btn-model ${selectedModel === vehicle.id ? 'bg-selected-model' : ''}`}
                         >
@@ -110,7 +107,7 @@ const FleetInfoDisplay = () => {
                   </div>
                   {selectedModel && (
                     <>
-                      <div className="col-start-2 col-end-3 row-start-2 ps-10 bg-white">
+                      <div className="row-start-3 sm:col-start-2 sm:col-end-3 sm:row-start-2 ps-10 bg-white">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
@@ -118,7 +115,7 @@ const FleetInfoDisplay = () => {
                             key={vehicle.id} 
                             src={vehicle.img} 
                             alt="vehicle" 
-                            className="w-96 h-82"/>
+                            className="sm:w-96 sm:h-82"/>
                           ))}
                       </div>
                       {/* <div className="col-start-2 col-end-3 row-start-2">
@@ -151,7 +148,7 @@ const FleetInfoDisplay = () => {
                           ))}
                       </div> */}
 
-                      <div className="col-start-3 row-start-2 place-self-center pe-2 mb-1">
+                      <div className="row-start-3 sm:col-start-3 sm:row-start-2 place-self-center pe-2 mb-1">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
