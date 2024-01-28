@@ -3,7 +3,7 @@ const SplitScreen = ({
 }) => {
     const [left, right] = children;
     return (
-        <div className="flex lg:flex-row sm:flex-col">
+        <div className="flex flex-col sm:flex-row">
             <>
                 {left}
             </>
