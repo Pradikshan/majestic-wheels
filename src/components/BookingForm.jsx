@@ -52,6 +52,7 @@ const BookingForm = () => {
         e.preventDefault();
 
         formRef.current.reset();
+        alert("Your booking was successful!");
     }
 
     // const handleCategoryChange = (e) => {
