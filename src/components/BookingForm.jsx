@@ -133,8 +133,8 @@ const BookingForm = () => {
             ></div> */}
                 <form className="mx-10">
                     <p className="text-3xl font-bold">Book your ride</p>
-                    <div className="grid lg:grid-cols-2 sm:grid-cols-1">
-                        <div className="col-span-1">
+                    <div className="grid grid-cols-1 sm:grid-cols-2">
+                        <div className="col-span-full sm:col-span-1">
                             <div className="flex flex-col">
                                 <label for="first_name">First name:</label>
                                 <input type="text" name="first_name" required onChange={formValidate}/>
