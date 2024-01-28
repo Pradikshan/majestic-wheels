@@ -10,7 +10,7 @@ export const InfoSection = () => {
     return(
         
         <div id="info" className="mt-32">
-            <p className="text-center text-5xl font-extrabold">Effortlessly arrange your ride</p>
+            <p className="text-center text-4xl sm:text-5xl font-extrabold">Effortlessly arrange your ride</p>
             <div className="flex sm:flex-row justify-center flex-col sm:items-center">
                 <InfoCard 
                 cardIcon={<PiCallBell style={style}/>} 
