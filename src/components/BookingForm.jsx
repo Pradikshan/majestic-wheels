@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const BookingForm = () => {
     // console.log(new Date());
@@ -45,6 +45,14 @@ const BookingForm = () => {
           }
         });
     };
+
+    const formRef = useRef();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        formRef.current.reset();
+    }
 
     // const handleCategoryChange = (e) => {
     //     setSelectedCategory(e.target.value);
@@ -131,7 +139,7 @@ const BookingForm = () => {
             className="absolute inset-0 bg-cover bg-center z-0"
             style={{ backgroundImage: 'url("../public/images/m5.jpg")' }}
             ></div> */}
-                <form className="mx-10">
+                <form ref={formRef} className="mx-10" onSubmit={handleSubmit}>
                     <p className="text-3xl font-bold">Book your ride</p>
                     <div className="grid grid-cols-1 sm:grid-cols-2">
                         <div className="col-span-full sm:col-span-1">
