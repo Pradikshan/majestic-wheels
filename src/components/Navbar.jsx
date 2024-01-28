@@ -11,7 +11,7 @@ const Navbar = () => {
     }
 
     return (
-        <navbar className="lg:sticky lg:top-0 bg-slate-50">
+        <div className="lg:sticky lg:top-0 bg-slate-50">
             <div className="lg:flex flex-row px-1 py-5 bg-slate-50 hidden">
                 <div className="flex flex-row basis-1/4 ps-8">
                     <IoCarSportOutline style={{fontSize: "30"}}  className="self-center me-2 mt-2"/>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 )}
 
             </div>            
-        </navbar>
+        </div>
     );
 }
 
