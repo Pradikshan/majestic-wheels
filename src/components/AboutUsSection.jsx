@@ -10,7 +10,7 @@ export const AboutUsSection = () => {
     return(
         <div id="about" className="mt-24">
             <h1 className="text-center text-4xl sm:text-5xl font-extrabold">Why choose us?</h1>
-            <div className="flex flex-col items-center  sm:flex-row sm:justify-center">
+            <div className="flex flex-col items-center sm:flex-row sm:justify-center">
                 <InfoCard 
                 cardIcon={<PiBuildings  style={style}/>} 
                 cardTitle={"Unparalleled Expertise"} 
