@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 // import FadeLoader from "react-spinners/ClipLoader";
 
 
