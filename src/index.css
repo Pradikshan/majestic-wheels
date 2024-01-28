@@ -36,11 +36,11 @@
     }
 
     .btn-model{
-        @apply bg-slate-300 py-3 hover:bg-blue-950 hover:text-xl hover:text-white 
+        @apply bg-slate-300 py-3 cursor-pointer hover:bg-blue-950 hover:text-xl hover:text-white 
     }
 
     .btn-category{
-        @apply col-span-1 py-5 hover:bg-blue-950 hover:text-xl hover:text-white 
+        @apply col-span-1 py-5 cursor-pointer hover:bg-blue-950 hover:text-xl hover:text-white 
     }
 
     .btn-book{
