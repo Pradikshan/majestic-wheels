@@ -12,7 +12,7 @@
     }
 
     li {
-        @apply px-3 transition ease-in-out delay-100 hover:scale-110 
+        @apply px-3 transition ease-in-out delay-100 hover:scale-125 
     }
 
     li a{
