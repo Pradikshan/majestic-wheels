@@ -9,7 +9,7 @@ Majestic Wheels is not just a car rental website; it's your gateway to luxury on
 
 ### Live demo
 
-[Live demo link](https://master--aquamarine-crostata-50ff41.netlify.app/){:target="\_blank"}
+[Live demo link](https://master--aquamarine-crostata-50ff41.netlify.app/)
 
 ## Screenshots from the project:
 
