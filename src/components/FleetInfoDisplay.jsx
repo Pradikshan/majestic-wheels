@@ -70,10 +70,6 @@ const FleetInfoDisplay = () => {
 
     if(!data) return null;
 
-
-
-    
-
     return (
         <div className="grid grid-cols-3 mx-6 my-8 shadow-lg rounded-b-2xl border-2 border-t-black bg-slate-300">
           {data.map((category) => (
@@ -91,8 +87,8 @@ const FleetInfoDisplay = () => {
               </button>
               {selectedCategory === category.categoryId && (
                 <>
-                  <div className="col-start-1 col-end-3 sm:col-end-2 row-start-2">
-                    <div className="flex flex-row sm:flex-col">
+                  <div className="col-span-3 sm:col-start-1 sm:col-end-2 row-start-2">
+                    <div className="flex flex-col">
                       {category.vehicles.map((vehicle) => (
                         <button
                           key={vehicle.id}
@@ -107,7 +103,7 @@ const FleetInfoDisplay = () => {
                   </div>
                   {selectedModel && (
                     <>
-                      <div className="row-start-3 sm:col-start-2 sm:col-end-3 sm:row-start-2 ps-10 bg-white">
+                      <div className="col-span-3 row-start-3 sm:col-start-2 sm:col-end-3 sm:row-start-2 ps-10 bg-white">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
@@ -115,7 +111,7 @@ const FleetInfoDisplay = () => {
                             key={vehicle.id} 
                             src={vehicle.img} 
                             alt="vehicle" 
-                            className="sm:w-96 sm:h-82"/>
+                            className="w-96 h-82"/>
                           ))}
                       </div>
                       {/* <div className="col-start-2 col-end-3 row-start-2">
@@ -148,7 +144,7 @@ const FleetInfoDisplay = () => {
                           ))}
                       </div> */}
 
-                      <div className="row-start-3 sm:col-start-3 sm:row-start-2 place-self-center pe-2 mb-1">
+                      <div className="col-span-3 row-start-4 sm:col-start-3 sm:row-start-2 place-self-center pe-2 mb-1">
                         {category.vehicles
                           .filter((vehicle) => vehicle.id === selectedModel)
                           .map((vehicle) => (
@@ -186,7 +182,9 @@ const FleetInfoDisplay = () => {
                                     </tbody>
                                 </table>
                                 <div className="flex-col">
-                                    <p className="px-3 py-3 flex flex-row text-2xl"><div className="text-2xl font-bold">${vehicle.price}</div>/ per day</p>
+                                    <p className="px-3 py-3 flex flex-row text-2xl">
+                                      <div className="text-2xl font-bold">${vehicle.price}</div>/ per day
+                                    </p>
                                     <button className="btn-book">
                                       <Link to="booking" smooth={true} duration={500}>
                                         Book now
