@@ -11,7 +11,7 @@ export const InfoSection = () => {
         
         <div id="info" className="mt-32">
             <p className="text-center text-5xl font-extrabold">Effortlessly arrange your ride</p>
-            <div className="flex lg:flex-row justify-center sm:flex-col sm:items-center">
+            <div className="flex sm:flex-row justify-center flex-col sm:items-center">
                 <InfoCard 
                 cardIcon={<PiCallBell style={style}/>} 
                 cardTitle={"Exceptional Service"} 
