@@ -1,7 +1,19 @@
+import { useState } from "react";
 import { FaInstagram, FaTwitter, FaSquareFacebook, FaTiktok, FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 
 const Footer = () => {
+
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        setEmail('');
+
+        
+    }
+
     return (
         <div id="footer" className="bg-blue-950 text-white p-5 mt-20">
            <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
@@ -59,8 +71,16 @@ const Footer = () => {
             <div>
                 <p className="font-bold">Newsletter</p>
                 <p>Subscribe to our newsletter</p>
-                <input type="email" name="newsletter" placeholder="Enter your email"/>
-                <button className="btn-sub">Subscribe</button>
+                <form onSubmit={handleSubmit}>
+                    <input 
+                        type="email" 
+                        name="newsletter" 
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <button className="btn-sub">Subscribe</button>
+                </form>
             </div>
 
             {window.innerWidth <= 600 ? (
